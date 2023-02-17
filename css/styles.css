@@ -23,6 +23,36 @@
   background-color: var(--color-section-header);
 }
 
+/* Containers */
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-selection {
+  display: flex;
+  padding: 24px 0px 25px 0px;
+  margin: 0px 93px 0px 215px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 50px;
+}
+
+.navigation-list > .contact-orientation:not(:first-child) {
+  margin-right: 215px;
+  align-items: 40px;
+}
+
+/* Styling zone */
+
 body {
   font-family: "Roboto", "raleway", sans-serif;
   font-weight: 400;
@@ -30,6 +60,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--color-text);
+  width: 1600px;
 }
 
 .navigation-list {
@@ -232,4 +263,11 @@ body {
 .image-portfolio {
   width: 370px;
   height: 294px;
+}
+
+* {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
