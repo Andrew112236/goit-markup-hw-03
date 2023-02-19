@@ -11,7 +11,8 @@
   --color-adress: rgba(255, 255, 255, 0.6);
   --color-box-shadow-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  --color-box-shadow-studio: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-studio: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .unstyled-list {
@@ -25,30 +26,55 @@
 
 /* Containers */
 
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  padding: 94px 0px 94px 0px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* Header containers */
+
 .page-header {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
 }
 
-.logo-selection {
+.page-header .logo-selection {
+  box-sizing: border-box;
   display: flex;
-  padding: 24px 0px 25px 0px;
-  margin: 0px 93px 0px 215px;
+  margin: 24px 53px 25px 215px;
 }
 
-.header-navigation {
+.header-navigation,
+.navigation-list,
+.contact-list,
+.skills {
   display: flex;
-  flex-grow: 1;
 }
 
 .navigation-list {
-  display: flex;
   gap: 50px;
 }
 
-.navigation-list > .contact-orientation:not(:first-child) {
-  margin-right: 215px;
-  align-items: 40px;
+.contact-list {
+  gap: 40px;
+  margin: 0px 0px 0px auto;
+}
+
+/* Main containers */
+
+.main-page-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Styling zone */
@@ -60,15 +86,14 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--color-text);
-  width: 1600px;
 }
 
-.navigation-list {
+.navigation-list,
+.contact-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--color-text);
 }
 
@@ -106,6 +131,10 @@ body {
 }
 
 .title-page {
+  display: flex;
+  box-sizing: border-box;
+  width: 696px;
+  align-items: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -113,25 +142,31 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-section-header);
+  margin: 106px 0px 30px 0px;
 }
 
 .button-studio {
+  display: flex;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--color-section-header);
-  background: var(--color-logo-left-path);
+  color: var(--color-section-footer-and-main);
   border-color: var(--color-section-footer-and-main);
   border-radius: 4px;
   cursor: pointer;
+  margin: 0px 0px 106px 0px;
+  padding: 10px 19px 10px 20px;
 }
 
 .button-studio:hover {
   box-shadow: var(--color-box-shadow-studio);
   border-color: var(--color-logo-left-path);
+  background: var(--color-logo-left-path);
+  color: var(--color-section-header);
 }
 
 .button-studio:focus {
@@ -140,6 +175,9 @@ body {
 }
 
 .sub-title-section {
+  display: flex;
+  gap: 30px;
+  padding: 0px 0px 10px 0px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -151,38 +189,80 @@ body {
   color: var(--color-text-section);
 }
 
+/* What we do section */
+
+.do-section {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 94px;
+}
 .title-section {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.167;
   text-align: center;
+  color: var(--color-text);
+  padding: 0px 0px 50px 0px;
 }
 
+.image-list-studio {
+  display: flex;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+  gap: 30px;
+}
+
+/* Company team */
+
 .company-team {
+  display: flex;
+  flex-direction: column;
   background: var(--color-section-team);
 }
 
 .background-box {
-  background: var(--color-section-header);
+  box-shadow: var(--color-box-shadow-studio);
+  border-radius: 0px 0px 4px 4px;
 }
-
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.187;
   text-align: center;
-  letter-spacing: 0.03em;
+  color: var(--color-text);
+  padding: 30px 0px 10px 0px;
+}
+
+.list-team {
+  display: flex;
+  gap: 30px;
+  padding: 0px;
+  justify-content: center;
 }
 
 .ocupation {
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.187;
   text-align: center;
   color: var(--color-text-section);
+  padding: 10px 0px 30px 0px;
 }
 
 .image-studio {
-  width: 200px;
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 260px;
+}
+
+/* Footer menu */
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
 }
 
 .contact-footer {
@@ -209,6 +289,16 @@ body {
 
 .footer .logo-selection {
   color: var(--color-section-header);
+}
+
+.footer .logo-selection {
+  box-sizing: border-box;
+  display: flex;
+  margin: 60px 0px 160px 215px;
+}
+
+.footer-navigation {
+  display: flex;
 }
 /* PAGE PORTFOLIO */
 
