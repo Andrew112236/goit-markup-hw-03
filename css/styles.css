@@ -260,18 +260,39 @@ body {
 
 /* Footer menu */
 
-.footer {
-  box-sizing: border-box;
+footer {
+  background-color: var(--color-section-footer-and-main);
   display: flex;
+  flex-direction: column;
+  height: 251px;
+}
+
+.adress-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  text-decoration: none;
+  color: var(--color-section-header);
 }
 
 .contact-footer {
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration: none;
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.143;
   color: var(--color-adress);
+  text-decoration: none;
 }
+
+.logo-selection {
+  margin: 60px 0px 28px 215px;
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 215px;
+}
+
 .contact-footer:hover {
   color: var(--color-logo-left-path);
 }
@@ -280,26 +301,10 @@ body {
   color: var(--color-logo-left-path);
 }
 
-.adress-footer {
-  font-size: 14px;
-  color: var(--color-section-header);
-  font-style: normal;
-  text-decoration: none;
-}
-
 .footer .logo-selection {
   color: var(--color-section-header);
 }
 
-.footer .logo-selection {
-  box-sizing: border-box;
-  display: flex;
-  margin: 60px 0px 160px 215px;
-}
-
-.footer-navigation {
-  display: flex;
-}
 /* PAGE PORTFOLIO */
 
 .products {
@@ -307,14 +312,18 @@ body {
 }
 
 .button-portfolio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 100px 0px 56px 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  background: var(--color-section-team);
   border-color: var(--color-section-header);
   cursor: pointer;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .button-portfolio:hover {
@@ -350,9 +359,29 @@ body {
   color: var(--color-text-section);
 }
 
+/* Containers */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 0px 94px 0px;
+  background: var(--color-section-header);
+}
+
 .image-portfolio {
+  justify-content: center;
+  background: var(--color-section-header);
+  border: 1px solid var(--color-section-header);
   width: 370px;
   height: 294px;
+}
+
+.list-of-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
 }
 
 * {
