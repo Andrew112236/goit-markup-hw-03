@@ -31,50 +31,55 @@
   width: auto;
   margin: auto;
   background-color: var(--color-section-header);
+  flex-wrap: wrap;
 }
 
 .container {
-  display: flex;
   width: 1200px;
-  justify-content: center;
-  box-sizing: border-box;
 }
 
 .section {
-  display: flex;
   padding: 94px 0px 94px 0px;
   box-sizing: border-box;
-  justify-content: center;
 }
 
 /* Header containers */
 
-.page-header {
-  box-sizing: border-box;
+.page-header,
+.navigation-list,
+.contact-list,
+.header-navigation {
   display: flex;
   align-items: center;
 }
 
-.page-header .logo-selection {
-  box-sizing: border-box;
-  display: flex;
-  margin: 24px 53px 25px 215px;
+.navigation-list .link {
+  gap: 50px;
 }
 
-.header-navigation,
-.navigation-list,
-.contact-list,
-.skills {
-  display: flex;
+.contact-list .link {
+  gap: 40px;
+}
+
+.logo-selection {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--color-logo-right-path);
+  padding: 24px 0px 25px 0px;
+  margin: 0px 53px 0px 215px;
 }
 
 .navigation-list {
   gap: 50px;
+  padding: 32px 0px 32px 0px;
 }
 
 .contact-list {
   gap: 40px;
-  margin: 0px 0px 0px auto;
+  margin: 0px 215px 0px auto;
 }
 
 /* Main containers */
@@ -85,7 +90,37 @@
   flex-direction: column;
 }
 
-/* Styling zone */
+.title-page {
+  font-weight: 900;
+  width: 42%;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-section-header);
+  margin: 106px 0px 30px 0px;
+}
+
+.main-page-section,
+.footer {
+  background: var(--color-section-footer-and-main);
+}
+
+.button-studio {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--color-section-footer-and-main);
+  border-color: var(--color-section-footer-and-main);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 0px 106px 0px;
+  padding: 10px 19px 10px 20px;
+}
+
+/* Styling zone - Background, general styles, hover and focus */
 
 body {
   font-family: "Roboto", "raleway", sans-serif;
@@ -117,57 +152,12 @@ body {
   color: var(--color-logo-left-path);
 }
 
-.logo-selection {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  color: var(--color-logo-right-path);
-}
 .color-logo {
   color: var(--color-logo-left-path);
 }
 
 .page-header {
   background: var(--color-section);
-}
-
-.main-page-section,
-.footer {
-  background: var(--color-section-footer-and-main);
-}
-
-.title-page {
-  display: flex;
-  box-sizing: border-box;
-  width: 696px;
-  align-items: center;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-section-header);
-  margin: 106px 0px 30px 0px;
-}
-
-.button-studio {
-  display: flex;
-  box-sizing: border-box;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--color-section-footer-and-main);
-  border-color: var(--color-section-footer-and-main);
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 0px 0px 106px 0px;
-  padding: 10px 19px 10px 20px;
 }
 
 .button-studio:hover {
@@ -179,12 +169,20 @@ body {
 
 .button-studio:focus {
   border-color: var(--color-logo-left-path);
+  color: var(--color-section-header);
+  background: var(--color-logo-left-path);
   border-radius: 4px;
 }
 
-.sub-title-section {
+/* What we do - section */
+
+.objective-orientation {
+  margin: 0px auto 0px auto;
   display: flex;
   gap: 30px;
+}
+
+.sub-title-section {
   padding: 0px 0px 10px 0px;
   font-weight: 700;
   font-size: 14px;
@@ -203,8 +201,8 @@ body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 94px;
+  align-items: center;
+  background-color: red;
 }
 .title-section {
   font-weight: 700;
@@ -217,9 +215,11 @@ body {
 
 .image-list-studio {
   display: flex;
-  align-items: center;
   width: 370px;
   height: 294px;
+}
+
+.do-section .image-list-studio {
   gap: 30px;
 }
 
@@ -232,6 +232,8 @@ body {
 }
 
 .background-box {
+  box-sizing: border-box;
+  background-color: var(--color-section-header);
   box-shadow: var(--color-box-shadow-studio);
   border-radius: 0px 0px 4px 4px;
 }
@@ -249,6 +251,7 @@ body {
   gap: 30px;
   padding: 0px;
   justify-content: center;
+  margin: 0px auto 0px auto;
 }
 
 .ocupation {
@@ -291,9 +294,6 @@ footer {
   text-decoration: none;
 }
 
-.logo-selection {
-  margin: 60px 0px 28px 215px;
-}
 .footer-navigation {
   display: flex;
   flex-direction: column;
