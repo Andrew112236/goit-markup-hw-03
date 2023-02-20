@@ -174,6 +174,17 @@ body {
   border-radius: 4px;
 }
 
+.contact-footer:hover {
+  color: var(--color-logo-left-path);
+}
+
+.contact-footer:focus {
+  color: var(--color-logo-left-path);
+}
+
+.footer .logo-selection {
+  color: var(--color-section-header);
+}
 /* What we do - section */
 
 .objective-orientation {
@@ -198,11 +209,11 @@ body {
 /* What we do section */
 
 .do-section {
-  display: flex;
-  box-sizing: border-box;
   flex-direction: column;
-  align-items: center;
-  background-color: red;
+  box-sizing: border-box;
+  width: 1200px;
+  justify-items: center;
+  margin: auto;
 }
 .title-section {
   font-weight: 700;
@@ -215,8 +226,10 @@ body {
 
 .image-list-studio {
   display: flex;
-  width: 370px;
-  height: 294px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 94px;
 }
 
 .do-section .image-list-studio {
@@ -272,10 +285,20 @@ body {
 /* Footer menu */
 
 footer {
-  background-color: var(--color-section-footer-and-main);
   display: flex;
   flex-direction: column;
-  height: 251px;
+  background-color: var(--color-section-footer-and-main);
+}
+
+.footer .logo-selection {
+  padding: 60px 0px 28px 0px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0px auto 60px 175px;
 }
 
 .adress-footer {
@@ -294,24 +317,7 @@ footer {
   text-decoration: none;
 }
 
-.footer-navigation {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-left: 215px;
-}
-
-.contact-footer:hover {
-  color: var(--color-logo-left-path);
-}
-
-.contact-footer:focus {
-  color: var(--color-logo-left-path);
-}
-
-.footer .logo-selection {
-  color: var(--color-section-header);
-}
+*/
 
 /* PAGE PORTFOLIO */
 
