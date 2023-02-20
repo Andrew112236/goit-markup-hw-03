@@ -113,7 +113,7 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--color-section-footer-and-main);
-  border-color: var(--color-section-footer-and-main);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   margin: 0px 0px 106px 0px;
@@ -267,7 +267,6 @@ body {
 .background-box {
   box-sizing: border-box;
   background-color: var(--color-section-header);
-  box-shadow: var(--color-box-shadow-studio);
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
@@ -372,7 +371,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   background: var(--color-section-header);
-  border: 1px solid var(--color-section-header);
+  border: none;
   width: 370px;
   height: 294px;
 }
@@ -382,7 +381,7 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  border-color: var(--color-section-header);
+  border: none;
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
@@ -393,6 +392,7 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding: 20px 0px 6px 0px;
 }
 
 .products .domain {
