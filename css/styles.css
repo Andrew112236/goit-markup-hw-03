@@ -185,6 +185,26 @@ body {
 .footer .logo-selection {
   color: var(--color-section-header);
 }
+
+.button-portfolio:hover {
+  font-family: "Roboto";
+  font-style: normal;
+  color: var(--color-section-header);
+  background: var(--color-logo-left-path);
+  box-shadow: var(--color-box-shadow-portfolio);
+  border-color: var(--color-logo-left-path);
+  border-radius: 4px;
+}
+
+.button-portfolio:focus {
+  font-family: "Roboto";
+  font-style: normal;
+  color: var(--color-section-header);
+  background: var(--color-logo-left-path);
+  box-shadow: var(--color-box-shadow-portfolio);
+  border-color: var(--color-logo-left-path);
+  border-radius: 4px;
+}
 /* What we do - section */
 
 .objective-orientation {
@@ -323,15 +343,33 @@ footer {
 
 /* Containers */
 
-.cards-container {
+.products {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1200px;
+  background: var(--color-section-objective);
+  margin: auto;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 94px 0px 56px 0px;
+}
+
+.list-of-options {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0px 0px 0px 0px;
-  background-color: var(--color-section-header);
+  gap: 30px;
+  margin: 0px 0px 94px 0px;
 }
 
 .image-portfolio {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   background: var(--color-section-header);
   border: 1px solid var(--color-section-header);
@@ -339,21 +377,7 @@ footer {
   height: 294px;
 }
 
-.list-of-options {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
-}
-
-.products {
-  background: var(--color-section-objective);
-}
-
 .button-portfolio {
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -362,26 +386,6 @@ footer {
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
-}
-
-.button-portfolio:hover {
-  font-family: "Roboto";
-  font-style: normal;
-  color: var(--color-section-header);
-  background: var(--color-logo-left-path);
-  box-shadow: var(--color-box-shadow-portfolio);
-  border-color: var(--color-logo-left-path);
-  border-radius: 4px;
-}
-
-.button-portfolio:focus {
-  font-family: "Roboto";
-  font-style: normal;
-  color: var(--color-section-header);
-  background: var(--color-logo-left-path);
-  box-shadow: var(--color-box-shadow-portfolio);
-  border-color: var(--color-logo-left-path);
-  border-radius: 4px;
 }
 
 .products .description {
