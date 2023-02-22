@@ -19,33 +19,35 @@
   <body>
     <!-- Header Section -->
     <header class="page-header">
-      <div class="container-project">
-        <a class="logo-selection" href="./index.html"
-          ><span class="color-logo">Web</span>Studio</a
-        >
+      <div class="container">
         <nav class="header-navigation">
           <ul class="unstyled-list navigation-list">
+            <li>
+              <a class="logo-selection" href="./index.html"
+                ><span class="color-logo">Web</span>Studio</a
+              >
+            </li>
             <li><a class="link" href="./index.html">Studio</a></li>
             <li><a class="link" href="./portfolio.html">Portfolio</a></li>
             <li><a class="link" href="#">Contacts</a></li>
           </ul>
+          <ul class="unstyled-list contact-list">
+            <li class="contact-orientation">
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-orientation">
+              <a class="link" href="tel:+1212-772-4150">+1 212-772-4150</a>
+            </li>
+          </ul>
         </nav>
-        <ul class="unstyled-list contact-list">
-          <li class="contact-orientation">
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-orientation">
-            <a class="link" href="tel:+1212-772-4150">+1 212-772-4150</a>
-          </li>
-        </ul>
       </div>
     </header>
     <!-- Main section -->
     <main>
-      <div class="cards-container">
-        <section class="products">
+      <section class="products">
+        <div class="container">
           <ul class="unstyled-list button-list">
             <li class="link">
               <button class="button-portfolio" type="button">All</button>
@@ -63,7 +65,9 @@
               <button class="button-portfolio" type="button">Marketing</button>
             </li>
           </ul>
-          <ul class="unstyled-list list-of-options">
+        </div>
+        <div class="container">
+          <ul class="unstyled-list list-of-options container">
             <!-- Line 1 with cards -->
             <li>
               <img
@@ -149,30 +153,32 @@
               <p class="domain">Apps</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <a class="logo-selection" href="./index.html"
-        ><span class="color-logo">Web</span>Studio</a
-      >
-      <address>
-        <ul class="unstyled-list footer-navigation">
-          <li>
-            <a class="adress-footer" href="">695 Park Ave, NY 10065, USA</a>
-          </li>
-          <li>
-            <a class="contact-footer" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-footer" href="tel:+1212-772-4150"
-              >+1 212-772-4150</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="contacts container">
+        <a class="logo-selection" href="./index.html"
+          ><span class="color-logo">Web</span>Studio</a
+        >
+        <address>
+          <ul class="unstyled-list footer-navigation">
+            <li>
+              <a class="adress-footer" href="">695 Park Ave, NY 10065, USA</a>
+            </li>
+            <li>
+              <a class="contact-footer" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-footer" href="tel:+1212-772-4150"
+                >+1 212-772-4150</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
