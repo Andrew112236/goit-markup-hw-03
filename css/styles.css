@@ -358,6 +358,10 @@ footer {
   margin: 0px auto 94px auto;
 }
 
+.border-cards {
+  border: 1px solid #eeeeee;
+}
+
 .image-portfolio {
   background: var(--color-section-header);
   border: none;
